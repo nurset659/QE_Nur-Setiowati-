@@ -1,0 +1,965 @@
+{
+	"info": {
+		"_postman_id": "6191870c-6671-428d-bb23-8bc8ec549745",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25390193",
+		"_collection_link": "https://www.postman.com/orange-trinity-129621/workspace/miniprojectalta/collection/25390193-6191870c-6671-428d-bb23-8bc8ec549745?action=share&creator=25390193&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "get all product tc+",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all product invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all product iinvalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by id tc +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11329",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11329"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by id tinvalid id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by id invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11329",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11329"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product ratings tc +",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product ratings with string",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/g/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"g",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product ratings invalid id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/900000000/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"900000000",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product ratings invalid method",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new product tc +",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sony p66\",\r\n    \"description\":\"punya nuk\",\r\n    \"price\":900,\r\n    \"categories\":[1]\r\n}"
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new product price with string",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sony p66\",\r\n    \"description\":\"punya nuk\",\r\n    \"price\":g,\r\n    \"categories\":[\r\n        1\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new product category with string",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sony p66\",\r\n    \"description\":\"punya nuk\",\r\n    \"price\":900,\r\n    \"categories\":[\r\n        a\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new product invalid method",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sony p66\",\r\n    \"description\":\"punya nuk\",\r\n    \"price\":900,\r\n    \"categories\":[\r\n        1\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a product rating tc +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"count\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11477/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11477",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a product rating  > 5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"count\":9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11477/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11477",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a product rating  minus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"count\": -2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11477/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11477",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a product rating with string",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"count\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/a/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"a",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a product rating invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"count\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11477/ratings",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11477",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a comment for product tc +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\"this is my comment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a comment for product id string",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\" \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/g/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"g",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a comment for product invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "LINK",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\" \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a comment for product blank comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\" \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product comments tc+",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product comments invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product comments invalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "bGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFt6Ik51ciBTZXRpaW93YXRpIiwiRW1haWWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7X",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11476/comments",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11476",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product by id tc+",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/11508",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"11508"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product by id invalid id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/0",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product by id invalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/products/114",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"products",
+						"114"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "8e1788a9-2856-4e2c-ae87-44cb72b3f018",
+		"name": "Product Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25390193",
+		"_collection_link": "https://www.postman.com/orange-trinity-129621/workspace/miniprojectalta/collection/25390193-8e1788a9-2856-4e2c-ae87-44cb72b3f018?action=share&creator=25390193&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create a category TC +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"no gaming\",\r\n    \"description\":\"not for  purposes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a category invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"no gaming\",\r\n    \"description\":\"not for  purposes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a category invalid data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\" \",\r\n    \"description\":\" \"\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all categories TC +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all categories invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all categories invalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get category by ID TC +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories/11296",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories",
+						"11296"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a category TC +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories/11301",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories",
+						"11301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a category invalid id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/categories/-9",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"categories",
+						"-9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

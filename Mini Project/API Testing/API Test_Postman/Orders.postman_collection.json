@@ -1,0 +1,472 @@
+{
+	"info": {
+		"_postman_id": "b3df27cc-b68c-4322-95bc-16988c8f4746",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25390193",
+		"_collection_link": "https://www.postman.com/orange-trinity-129621/workspace/miniprojectalta/collection/25390193-b3df27cc-b68c-4322-95bc-16988c8f4746?action=share&creator=25390193&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create a new order tc +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":11506,\r\n        \"quantity\":2\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new order invalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":11506,\r\n        \"quantity\":2\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new order invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":11506,\r\n        \"quantity\":2\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new order qty 0",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":11506,\r\n        \"quantity\":0\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new order qty -1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":11506,\r\n        \"quantity\":-1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new order invalid id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":130000,\r\n        \"quantity\":1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders tc +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders invalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order by ID tc +",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders/9362",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders",
+						"9362"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order by  invalid id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders/99",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order by  id invalid method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders/9362",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders",
+						"9362"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order by  id invalid token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Ik51ciBTZXRpaW93YXRpIiwiRW1haWwiOiJudWtjaG40QGdtYWlsLmNvbSJ9.bSXFE_Sd_dIA8P24gvVm37qjECg2F9fH7XqfeCHMsSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders/9362",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders",
+						"9362"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
